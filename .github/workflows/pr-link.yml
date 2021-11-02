@@ -25,5 +25,6 @@ jobs:
       - uses: marocchino/sticky-pull-request-comment@v2
         with:
           message: |
-            For coverage Diff, see: to <http://go/sparkly-pr-coverage/${{ github.event.number }}>
+            Test Coverage for files changed in this PR: [http://go/sparkly-pr-coverage/${{ github.event.number }}](https://coverage-browser-dot-etsy-bizdata-gcp-prod.uc.r.appspot.com/sparkly/diff/${{ github.event.number }} "Test Coverage Delta for PR ${{ github.event.number }}").
+            Note: Coverage link above will not work until Cloudbuild test runner in this PR is finished.
 
